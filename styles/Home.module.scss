@@ -1,43 +1,85 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+ &__presentation{
+	display: flex;
+	justify-content: space-between;
+	background-color: #fbfbfb;
+ }
+ &__about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #2d2b38;
+	padding-right: 15px;
+	h1 {
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 128%;
+		
+	}
+	p {
+		margin: 24px 0;
+	}
+ }
+
+ &__button {
+	display: inline-flex;
+	background-color: #2d2b38; 
+	color: #fbfbfb;
+	border: 1px solid transparent;
+	padding: 15px;
+	border-radius: 30px;
+	transition: all 0.8s ease 0s;
+ }
+ &__button:hover {
+	background-color: #fbfbfb; 
+	color: #2d2b38;
+	border: 1px solid #2d2b38;
+ }
+ &__favorites {
+	background-color: #fbfbfb;
+	color: #2d2b38;
+	text-align: center;
+	h2 {
+		line-height: 180%;
+		font-weight: 700;
+		font-size: 24px;
+		padding: 40px 0 24px 0;
+	}
+	p {
+		padding: 0px 20px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+ }
+ &__row {
+	min-height: 300px;
+	padding-top: 30px;
+	background-color: #fbfbfb;
+ }
+ &__items{
+	display: grid;
+  grid-template-columns: repeat(3, minmax(25%, auto));
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+ }
+ &__bottom {
+	padding-top: 40px;
+	background-color: #fbfbfb;
+ }
+}
+.item {
+	&__title {
+		font-weight: 300;
+		text-align: center;
+		padding: 15px;
+		color: #2d2b38;
+	}
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
 
 .grid {
   display: grid;

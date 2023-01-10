@@ -1,0 +1,36 @@
+.header {
+	border-radius: 15px 15px 0 0;
+	margin-top: 20px;
+	min-height: 60px;
+	background-color: #34323a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logo{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 20px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+	font-size: 14px;
+	font-weight: 300;
+ &__item{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+ }
+ &__item:hover{
+	color: aquamarine;
+ }
+}
